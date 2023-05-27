@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="passgenerator.css"/>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="passgenerator.js" defer></script>
+ 
+   
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar">
+        <a href="login.html" class="navbar-logo">All<span>SITE</span></a>
+        <div class="navbar-nav active">
+        <ul>
+            <li><a href="main.html">Back</i></a></li>
+            <li><a href="#"><i data-feather="arrow-left"></i> Previous</a></li>
+            <li><a href="#">Password Generator</a>
+                <ul class="dropdown">
+                    <li><a href="#pengertian">Pengertian Password Generator</a></li>
+                    <li><a href="#fungsi">Fungsi Password Generator</a></li>
+                    <li><a href="#pass">Ayo Buat Passwordmu !</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i data-feather="arrow-right"></i> Next</a></li>
+            <li><a onclick="darkMode()" href="#">Mode</a></li> 
+            <li><a href="#" id="hamburger-menu" class="menu"><i data-feather="menu"></i></a></li> 
+        </ul>
+      </div>
+    </nav>
+         <!-- end navbar -->
+
+         <!-- Section 1 start -->
+       <section class="hero" id="home">
+        <main class="content">
+          <h1>PASSWORD<span> GENERATOR</span></h1>
+        </main>
+       </section>
+
+       <!-- Section 1 end -->
+
+         <!-- section 2 start -->
+       <section id="pengertian" class="about">
+        <h2><span>Pengertian</span> Password Generator</h2>
+
+        <div class="row">
+          <div class="about-img">
+            <img src="ASSET/IMG/bggenerate.jpeg" alt="#">
+          </div>
+          <div class="content">
+            <h3>Apa sih Password Generator itu ?</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, odit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+       </section>
+       <!-- section 2 end -->
+
+        <!-- section 3 start -->
+        <section id="fungsi" class="about1">
+            <h2><span>Fungsi</span> Password Generator</h2>
+    
+            <div class="row1">
+                <div class="content1">
+                  <h3>Jadi Fungsi Password Generator buat apa ?</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, odit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              <div class="about-img1">
+                <img src="ASSET/IMG/bggene.jpg" alt="#">
+              </div>
+            </div>
+           </section>
+        <!-- section 3 end -->
+
+        <!-- password generator start -->
+        <section class="pass" id="pass">
+          <h2><span>Ayo Buat</span> Passwordmu !</h2>
+          <div class="container">
+              <h3>Passowrd Generator</h3>
+              <div class="wrapper">
+                  <div class="input-box">
+                    <input type="text" disabled>
+                    <span class="material-symbols-rounded" width="100px"><ion-icon name="copy"></ion-icon></span>
+                  </div>
+                  <div class="pass-indicator"></div>
+                  <div class="pass-length">
+                    <div class="details">
+                      <label class="title">Passowrd Length</label>
+                      <span></span>
+                    </div>
+                    <input type="range" min="1" max="30" step="1">
+                  </div>
+                  <div class="pass-settings">
+                    <label class="title">Password Settings</label>
+                    <ul class="options">
+                      <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Lowercase (a-z)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numbers (0-9)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols (!-$^+)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="exc-duplicate">
+                        <label for="exc-duplicate">Exclude Duplicate</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Include Spaces</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="generate-btn">Generate Password</button>
+              </div>
+          </div>
+          </section>
+        <!-- password generator end -->
+
+        <!-- footer start -->
+       <footer>
+          <div class="socials">
+              <a href="https://www.instagram.com/yulius_ycp/"><i data-feather="instagram"></i></a>
+              <a href="https://twitter.com/AntiBuff/"><i data-feather="twitter"></i></a>
+              <a href="https://www.facebook.com/yulius.calvin/"><i data-feather="facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCpvD0PJ3osZoJozG4KY4z6w"><i data-feather="youtube"></i></a>
+              <a href="https://github.com/yulius15/"><i data-feather="github"></i></a>
+          </div>
+          <div class="links">
+            <a href="#"><i data-feather="arrow-left"></i> Previous</a>
+            <a href="#home">Home</a>
+            <a href="#"><i data-feather="arrow-right"></i> Next</a> 
+          </div>
+          <div class="credit">
+              <p>Created by <a href="login.html">yuliuscalvin</a>. | &copy; 2023.</p>
+          </div>
+     </footer>
+
+     <!-- footer 4 end -->
+
+         <!-- script mode start -->
+      <script>
+        let mode =document.getElementById('mode')
+        let body =document.body
+
+        function darkMode() {
+          body.classList.toggle("dark");
+        }
+      </script>
+       
+       <!-- script mode end -->
+       
+
+
+
+        <script>
+            feather.replace()
+        </script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        
+      </body>
+      <script src="passgenerator.js"></script>
+
+</html>

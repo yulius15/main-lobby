@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Lobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar">
+      <a href="login.html" class="navbar-logo">All<span>SITE</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu Proyek</a>
+        <a href="#proyek">Ulasan</a>    
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#"  class="search" id="search"><i data-feather="search"></i></a>
+        <a onclick="darkMode()" id="mode" class="mode">Mode</a>
+        <a href="#" id="hamburger-menu" class="menu"><i data-feather="menu"></i></a>
+      </div>  
+      </nav>
+       <!-- end navbar -->
+
+       <!-- Section 1 start -->
+       <section class="hero" id="home">
+        <main class="content">
+          <img src="ASSET/IMG/bangjago.jpg" class="gambar" alt="#">
+          <h1>ALL<span>SITE</span></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, corrupti?</p>
+          <a href="login.html" class="cta">Mari Bergabung</a>
+        </main>
+       </section>
+
+       <!-- Section 1 end -->
+
+       <!-- section 2 start -->
+       <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+
+        <div class="row">
+          <div class="about-img">
+            <img src="ASSET/IMG/ledus.jpg" alt="#">
+          </div>
+          <div class="content">
+            <h3>Manfaat apa yang diberikan jika bergabung ?</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, odit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+       </section>
+       <!-- section 2 end -->
+
+       <!-- section 3 start -->
+       <section id="menu" class="menu">
+          <h2><span>Menu</span> Proyek</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, odit!
+          </p>
+
+          <div class="row">
+            <div class="menu-card">
+              <img src="ASSET/IMG/bangjago.jpg" alt="#" class="menu-card-img"/>
+              <a href="login.html" >~~ Tentang<span> Saya ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+            <div class="menu-card">
+              <img src="ASSET/IMG/bgpassgene.jpg" alt="#" class="menu-card-img"/>
+              <a href="passgenerator.html" >~~ Password<span> Generator ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+            <div class="menu-card">
+              <img src="ASSET/IMG/lampu.jpg" alt="#" class="menu-card-img"/>
+              <a href="login.html">~~ Lampu<span> Tester ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+            <div class="menu-card">
+              <img src="ASSET/IMG/resep.jpg" alt="" class="menu-card-img"/>
+              <a href="login.html">~~ Resep<span> Masakan ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+            <div class="menu-card">
+              <img src="ASSET/IMG/cinematic.jpg" alt="" class="menu-card-img"/>
+              <a href="login.html">~~ Cinematic<span> Trailer ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+            <div class="menu-card">
+              <img src="ASSET/IMG/kopisenja.jpg" alt="" class="menu-card-img"/>
+              <a href="login.html">~~ Web<span> Kopi Senja ~~</span></a>
+              <p class="menu-cart-price">Developed by Yulius</p>
+            </div>
+          </div>
+       </section>
+
+       <!-- section 3 end -->
+
+       <!-- section 4 start -->
+       <section id="proyek" class="proyek">
+        <h2><span>Ulas</span> Kami</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing.
+        </p>
+        <div class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.468246763798!2d104.7612057740231!3d-2.9674915397728725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b77440298d1f1%3A0x44ad3c5a14970570!2sSMA%20Xaverius%201%20Palembang!5e0!3m2!1sid!2sid!4v1684691282843!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <form action="">
+              <div class="input-group">
+                  <i data-feather="user"></i>
+                  <input type="text" placeholder="nama">
+              </div>
+              <div class="input-group">
+                  <i data-feather="mail"></i>
+                  <input type="text" placeholder="email">
+              </div>
+              <div class="input-group">
+                  <i data-feather="phone"></i>
+                  <input type="text" placeholder="no.hp">
+              </div>
+              <button id="btn" onclick="button()" class="btn" type="submit">Kirim Ulasan</button>
+          </form>
+        </div>
+       </section>
+       
+
+       <!-- section 4 end -->
+
+       <!-- footer start -->
+       <footer>
+          <div class="socials">
+              <a href="https://www.instagram.com/yulius_ycp/"><i data-feather="instagram"></i></a>
+              <a href="https://twitter.com/AntiBuff/"><i data-feather="twitter"></i></a>
+              <a href="https://www.facebook.com/yulius.calvin/"><i data-feather="facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCpvD0PJ3osZoJozG4KY4z6w"><i data-feather="youtube"></i></a>
+              <a href="https://github.com/yulius15/"><i data-feather="github"></i></a>
+          </div>
+          <div class="links">
+              <a href="#home">Home</a>
+              <a href="#about">Tentang Kami</a>
+              <a href="#menu">Menu Proyek</a>
+              <a href="#proyek">Ulasan</a>
+          </div>
+          <div class="credit">
+              <p>Created by <a href="login.html">yuliuscalvin</a>. | &copy; 2023.</p>
+          </div>
+       </footer>
+
+       <!-- footer 4 end -->
+
+       <!-- script mode start -->
+      <script>
+        let mode =document.getElementById('mode')
+        let body =document.body
+
+        function darkMode() {
+          body.classList.toggle("dark");
+        }
+      </script>
+       
+       <!-- script mode end -->
+
+  
+</body>
+<script>
+  feather.replace()
+</script>
+<script src="project.js"></script>
+
+</html>

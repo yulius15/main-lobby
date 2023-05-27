@@ -1,0 +1,601 @@
+:root {
+    --primary:#330afe;
+    --bg:#010101;
+    --mode:#ffffff;
+    --gg:#5a5959;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+    
+}
+
+.dark {
+    background-color: var(--mode);
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;
+    background-color: rgba(1, 1, 1, 0,8);
+    border-bottom: 4px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gg);
+    font-style: italic;
+    letter-spacing: 1.2rem;
+
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+
+}
+
+
+
+.navbar .navbar-nav a {
+    color: var(--gg);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    font-weight: 700;
+    
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: ' ';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a {
+    color: var(--gg);
+    margin: 0 0.7rem;
+    
+}
+
+.navbar .navbar-extra .search:hover {
+    color: var(--primary);
+}
+
+
+.navbar .navbar-extra .menu:hover {
+    color: var(--primary);
+}
+
+
+.navbar .navbar-extra .mode  {
+    color: var(--gg);
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 1rem -0.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+
+.navbar .navbar-extra .mode:hover {
+    color: var(--primary);
+
+}
+
+
+.navbar .navbar-extra .login  {
+    color: var(--gg);
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 800;
+    
+}
+
+
+
+.navbar .navbar-extra .login:hover {
+    background-color: var(--primary);
+    color: black;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* section 1 */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(ASSET/IMG/perkumpulanorang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+
+}
+
+.hero .content .gambar {
+    display: flex;
+    border-radius: 50%;
+    padding: 0.1rem 30rem ;
+   
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    align-items: center;
+     
+}
+
+.hero .content h1 {
+    font-size: 2em;
+    letter-spacing: 1.2rem;
+    color: var(--gg);
+    text-shadow: 5px 4px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+}
+
+.hero .content p {
+    font-size: 1.22rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 200;
+    text-shadow: 7px 7px 4px rgba(1, 1, 3, 0.5);
+    color: var(--mode);
+   
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #010101;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 3px rgba(1, 1, 3, 0.5 );
+}
+
+/* section 2 */
+
+.about,
+.menu,
+.proyek {
+    padding: 8rem 10% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.proyek h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gg);
+}
+
+.about h2 span,
+.menu h2 span,
+.proyek h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--gg);
+}
+
+.about .row .content p {
+    color: var(--gg);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+
+}
+
+/* section 3 */
+.menu h2,
+.proyek h2 {
+    margin-bottom: 1rem;
+
+}
+
+.menu p,
+.proyek p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    color: var(--gg);
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.menu .row .menu-card img {
+    width: 100%;
+    display: flex;
+    padding: 1rem 13% 3rem ;
+    
+}
+
+.menu .row .menu-card a {
+    color: var(--gg);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.menu .row .menu-card a:hover {
+    color: var(--primary);
+}
+
+.menu .row .menu-card a::after {
+    content: ' ';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.menu .row .menu-card a:hover::after {
+    transform: scaleX(0.4);
+}
+
+
+.menu .row .menu-cart-price {
+    color: var(--gg);
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* section 4 */
+.proyek .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+}
+
+.proyek .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proyek .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.proyek .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+    color: white;
+}
+
+
+.proyek .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+.proyek .row form .btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: var(--bg);
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 2rem;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+
+footer .credit {
+    font-size: 1.2rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* media queries */
+
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-logo {
+        font-size: 3rem;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 25rem;
+        height: 38vh;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        position: relative;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+
+    }
+
+    .navbar .navbar-extra a {
+        display: inline-block;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navbar .navbar-extra .mode  {
+       font-size: 2rem;
+        
+    }
+
+    .navbar .navbar-extra .login  {
+       font-size: 2rem;
+        
+    }
+    
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .hero .content .gambar {
+        display: flex;
+        border-radius: 50%;
+        padding: 0.1rem 4rem ;
+        width: 85%;
+       
+    }
+
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .content p {
+        font-size: 1.7rem;
+    }
+
+    .hero .content .cta{
+        font-size: 2rem;
+    }
+
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content p {
+        font-size: 1.8rem;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .menu p {
+        font-size: 1.8rem;
+    }
+
+    .menu .row .menu-card a {
+        font-size: 2rem;
+    }
+
+    .menu .row .menu-card a::after {
+        content: ' ';
+        display: block;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.5rem solid var(--primary);
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+    
+    .menu .row .menu-card a:hover::after {
+        transform: scaleX(0.25);
+    }
+    
+    .menu .row .menu-card p {
+        font-size: 1.6rem;
+    }
+
+    .proyek p {
+        font-size: 1.7rem;
+    }
+
+    .proyek .row {
+        flex-wrap: wrap;
+    }
+
+    .proyek .row .map {
+        height: 30rem;
+    }
+
+    .proyek .row form {
+        padding-top: 0;
+    }
+
+}
+
+
+
+/* phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 25rem;
+        height: 30vh;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+}

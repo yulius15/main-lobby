@@ -1,0 +1,507 @@
+:root {
+    --primary:#330afe;
+    --bg:#010101;
+    --mode:#ffffff;
+    --gg:#5a5959;
+    --ty:#b6895b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+    
+}
+
+.dark {
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;
+    background-color: rgba(1, 1, 1, 0,8);
+    border-bottom: 4px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gg);
+    font-style: italic;
+    letter-spacing: 1.2rem;
+
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+
+}
+
+.navbar .navbar-nav li a::after {
+    content: ' ';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+
+.navbar ul {
+    margin: 0px;
+    padding: 1px;
+    background: none;
+    float: right;
+    display: block;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 1.8rem;
+    color: var(--gg);
+    font-size:1.5rem;
+}
+
+.navbar ul li a:hover {
+   color: var(--primary);
+}
+
+.navbar ul li .dropdown {
+    display: none;
+
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+    background: var(--ty);
+    position: absolute;
+    padding: 17px;
+    border-radius: 5px;
+
+}
+
+.navbar ul li:hover .dropdown li {
+    display: block;
+}
+
+.navbar ul li:hover .dropdown li a {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar ul li:hover .dropdown li a:hover {
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background-image: url(ASSET/IMG/bggene2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+
+}
+
+
+.hero .content {
+    padding: 6rem 40%;
+    max-width:60rem;
+    
+     
+}
+
+.hero .content h1 {
+    font-size: 2em;
+    letter-spacing: 0.5rem;
+    color: var(--gg);
+    text-shadow: 5px 4px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+}
+
+
+.about {
+    padding: 13rem 10% 1.4rem;
+}
+
+.about h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gg);
+    
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 3rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--gg);
+}
+
+.about .row .content p {
+    color: var(--gg);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.about1 {
+    padding: 13rem 10% 1.4rem;
+}
+
+.about1 h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gg);
+}
+
+.about1 h2 span {
+    color: var(--primary);
+}
+
+.about1 .row1 {
+    display: flex;
+}
+
+.about1 .row1 .about-img1 {
+    flex: 1 1 45rem;
+}
+
+.about1 .row1 .about-img1 img {
+    width: 100%;
+}
+
+.about1 .row1 .content1 {
+    flex: 1 1 35rem;
+    padding: 0 3rem;
+}
+
+.about1 .row1 .content1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--gg);
+    padding-left: 6rem;
+    
+   
+}
+
+.about1 .row1 .content1 p {
+    color: var(--gg);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-left: 6rem;
+}
+
+.pass {
+    padding: 13rem 35% 1.4rem;
+    
+   
+}
+
+.pass h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gg);
+    padding-right: 2rem;
+}
+
+.pass h2 span {
+    color: var(--primary);
+    
+}
+
+.container {
+    width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    color: black;
+}
+
+.container h3 {
+    font-weight: 600;
+    font-size: 1.31rem;
+    padding: 1rem 1.175rem;
+    border-bottom: 3px solid var(--gg);
+}
+
+.wrapper {
+    margin: 1.25rem 1.75rem;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 53px;
+    font-size: 1.06rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1.5px solid var(--ty);
+    padding: 0 2.85rem 0 1rem;
+    letter-spacing: 1.4px;
+    color: #000;
+    background: none;
+}
+.input-box span {
+    position: absolute;
+    line-height: 59px;
+    right: 540px;
+    cursor: pointer;
+    
+}
+
+.wrapper .pass-indicator {
+    width: 100%;
+    height: 4px;
+    background: #dfdfdf;
+    margin-top:0.75rem;
+    border-radius: 25px;
+    position: relative;
+
+}
+
+.pass-indicator::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before {
+    width: 20%;
+    background:#e64a4a;
+}
+.pass-indicator#medium::before {
+    width: 50%;
+    background: #f1c80b;
+}
+.pass-indicator#strong::before {
+    width: 100%;
+    background: #4285f4;
+}
+
+.wrapper .pass-length {
+    margin: 1.56rem 0 1.25rem;
+}
+
+.pass-length .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-length input {
+    width: 100%;
+    height: 5px;
+}
+
+.details .title {
+    font-weight: 600;
+}
+
+.pass-settings .options {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    
+}
+
+.pass-settings .title {
+    font-weight: 600;
+}
+
+.pass-settings .options .option {
+    display: flex;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+}
+
+.options .option:first-child {
+    pointer-events: none;
+}
+.options .option:first-child input {
+    opacity: 0.7;
+}
+
+.options .option input {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.options .option label {
+    cursor: pointer;
+    padding-left: 0.63rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.wrapper .generate-btn {
+    width: 100%;
+    font-weight: 900;
+    font-size: 1.06rem;
+    padding: 0.94rem 0;
+    border-radius: 5px;
+    margin: 0.94rem 0 1.3rem;
+    background: #4285f4;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 2rem;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+
+footer .credit {
+    font-size: 1.2rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 700;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* media queries */
+
+/* tablet */
+@media (max-width:768px ) {
+    html {
+        font-size: 62.5%;
+    }
+    
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav ul li{
+        position: absolute;
+        top: 100%;
+        right: -1%;
+        background-color: white;
+        width: 25rem;
+        height: 100vh;
+        transition: 0.3s;
+        font-weight: 500
+    }
+
+    .navbar .navbar-nav ul li .active {
+        right: 0;
+    }
+}
+
+
+
+
+
+
+
+

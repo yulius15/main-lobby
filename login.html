@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <form action="main.html">
+        <div>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>LOGIN</h2>
+                        <div class="inputbox">
+                            <ion-icon name="contact"></ion-icon>
+                            <input type="username" id="username" required />
+                            <label for="">Username</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock"></ion-icon>
+                            <input type="password" id="password" required />
+                            <label for="">Password</label>
+                        </div> 
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password?</a></label>
+                            
+                        </div>
+                        <button onclick="login()">Log in</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="register.html" >Register Here!</a></p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </form>
+    </body>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Register.js"></script>
+</html>
